@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Games</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <header class="bg-pink-200 p-4 shadow-md">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-700">My Games 🎮</h1>
+      <a href="index.html" class="text-sm text-pink-700 hover:underline">← Back to Home</a>
+    </div>
+  </header>
+
+
+  <!-- Popup HTML -->
+  <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm hidden z-50">
+    <div class="bg-white rounded-xl p-6 shadow-lg max-w-xs text-center">
+      <p class="text-lg font-semibold mb-4">No games yet!</p>
+      <button id="closePopup" class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Show the popup function
+    function showPopup() {
+      document.getElementById('popup').classList.remove('hidden');
+    }
+
+    document.getElementById('closePopup').addEventListener('click', () => {
+      window.location.href = 'index.html'; // Redirects to your homepage
+    });
+
+
+    window.onload = () => {
+    showPopup();
+  };
+
+  </script>
+
+  <main class="max-w-4xl mx-auto p-6">
+    
+    <h2 class="text-xl font-semibold mb-4">Check out my games below!</h2>
+    <ul class="space-y-4">
+      <li class="bg-white rounded-xl p-4 shadow">
+        <h3 class="text-lg font-semibold">1</h3>
+        <a href="https://link-to-your-game1.com" target="_blank" class="text-pink-600 hover:underline">Play Now</a>
+      </li>
+      <li class="bg-white rounded-xl p-4 shadow">
+        <h3 class="text-lg font-semibold">2</h3>
+        <a href="https://link-to-your-game2.com" target="_blank" class="text-pink-600 hover:underline">Play Now</a>
+      </li>
+      <li class="bg-white rounded-xl p-4 shadow">
+        <h3 class="text-lg font-semibold">3</h3>
+        <a href="https://link-to-your-game3.com" target="_blank" class="text-pink-600 hover:underline">Play Now</a>
+      </li>
+    </ul>
+  </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pastelPink: '#FADADD',
+              pastelBlue: '#DDEEFF',
+              pastelLavender: '#EBD7FF',
+              pastelGray: '#F8F8F8'
+            },
+            fontFamily: {
+              cute: ['"Poppins"', 'sans-serif']
+            },
+            borderRadius: {
+              xl: '1rem',
+              '2xl': '1.5rem'
+            }
+          }
+        }
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-pink-50 text-gray-800 font-sans">
+    <header class="text-center p-6">
+      <h1 class="text-4xl font-semibold">🌸 Welcome to My Hub 🌸</h1>
+      <p class="text-lg mt-2">Artist, Developer, Dreamer</p>
+    </header>
+
+    <section id="about" class="max-w-xl mx-auto bg-white rounded-2xl shadow p-6 mb-8">
+      <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+      <p>
+        Hi! I'm Cherrubi, a passionate artist and indie game developer.
+        I love bringing my ideas to life through cute websites and fun games!
+      </p>
+    </section>
+
+    <section id="projects" class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-4 text-center">My Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white rounded-2xl shadow p-4">
+          <h3 class="text-xl font-semibold">🎨 Art Website</h3>
+          <p class="mb-2">Check out my art commissions and gallery!</p>
+          <a href="https://cherrubi11.github.io/cherrubi-comissions/" class="text-pink-600 hover:underline">Visit Site</a>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-4">
+          <h3 class="text-xl font-semibold">🎮 My Games</h3>
+          <p class="mb-2">Play my cute and cozy games online!</p>
+          <a href="games.html" class="text-pink-600 hover:underline">Play Now</a>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-4">
+          <h3 class="text-xl font-semibold">🌐 More Links</h3>
+          <p class="mb-2">Socials, blog, or other cool stuff!</p>
+          <a href="more-links.html" class="text-pink-600 hover:underline">Explore</a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="text-center mt-12 p-4 text-sm">
+      <p>💌 Contact me: b00334202@gmail.com</p>
+    </footer>
+  </body>
+</html>
